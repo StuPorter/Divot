@@ -1,0 +1,52 @@
+/**
+ * Main Stylesheet
+ */
+
+::selection { background: @orange; color: @white; }
+::moz-selection { background: @orange; color: @white; }
+
+@import 'modules/colors';     // Global color scheme
+@import 'modules/mixins';     // Mixins
+@import 'modules/grid';       // Baseline grid
+// @import 'modules/flex-grid';  // Flexbox grid
+@import 'modules/type';       // Typography
+
+//@import 'print';      // Print styles (Coming soon)
+* {
+  font-size: 18px;
+}
+
+@white: #f7f7f7;
+
+body {
+  background: @white;
+
+  p {
+    font-family: sans-serif;
+  }
+}
+
+.signin {
+  color: red;
+}
+
+.profile-info {
+  background: grey;
+  padding: 10px;  
+  border: 1px solid lightblue;
+  background: #eee;
+  box-shadow: inset 3px 3px 3px  #999;
+  margin: 0;
+  min-height: 350px;
+}
+
+.layout-logo{
+  height: 80px;
+  width:  80px;
+}
+
+.profile-user-image {
+  height: 200px;
+  width: 200px;
+}
+

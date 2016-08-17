@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> <%= @page_title %> </title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+<header class="container">
+  <div class="row">
+    <div class="col-12">
+    <img class="layout-logo" src="/img/logo.jpg">
+      <ul class="menu-list">
+        <li>
+          <a href="/">Home </a>|
+        </li>
+        <li>
+          <a href="/find">Course Finder </a>|
+        </li>
+        <li>
+          <a href="/logout">Logout </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<%= yield %>
+
+
+<footer>
+  <p> &copy; Stu Porter, GA 2016</p>
+</footer>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,36 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-8N5UgxGg0FPl3yxO7-PwIECMAKAETrA&callback=initMap" async defer></script>
+
+<div class="container main-background">
+  <div class="row">
+    <div class="col-4">
+      <h4> Enter the adress and press the button</h4>
+      <input id="address" type="text" size="26" placeholder="Enter address here" />
+      <button id="btn">Search</button>
+      <div>
+          <h4>Found match: </h4>
+            <input type="text" id="full-address" size="35" readonly />
+         
+      </div>
+      <h4 >Last searches: </h4>
+       <div id="search-results"></div>
+    </div>
+
+
+    <div class="col-8">
+     <div class="profile-street-btn">
+        <span><a href="/streets/new">Create new street</a></span> 
+      </div>
+      <div id="map" class="map-find"></div>
+      <div>
+        <p><%= @message %> </p>
+      </div>
+      <div id="marker-tooltip" class="marker-tooltip-find"></div>
+     
+
+  </div>
+    
+  </div>
+  
+</div>
+
+<script src="/js/find.js"></script>

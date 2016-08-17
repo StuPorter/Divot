@@ -1,0 +1,40 @@
+<main class="container register-bg">
+  <div class="row main-container">
+    <div class="col-4">&nbsp;</div>
+    <div class="col-4">
+      <h2>Sign up</h2>
+      <p class="red"> <%= @message %> </p>
+
+      <form action="/users" method="post">
+        <label class="form-block">
+          <input type="text" name="username" size="25" placeholder="Pick a username" required/>
+        </label><br />
+        <label class="form-block">
+          <input type="password" name="password" size="25" placeholder="Choose a password" required/>
+        </label><br />
+        <label class="form-block">
+          <input type="password" name="password_confirmation" size="25" placeholder="Confirm your password" required/>
+        </label><br />
+        <label class="form-block">
+          <input type="text" name="fullname" size="25" placeholder="Enter full name" />
+        </label><br />
+        <label class="form-block">
+          <input type="email" name="email" size="25" placeholder="Enter email" />
+        </label><br />
+        <label class="form-block">
+          <input type="text" name="homecourse" size="25" placeholder="Enter your home course" />
+        </label><br />
+        <label class="form-block">
+          <input type="number" name="avgscore" size="25" placeholder="Enter your handicap" />
+        </label><br />
+        <label class="form-block">
+          <input type="text" name="img" size="25" placeholder="Path to an image" />
+        </label><br />
+        <button>Sign up</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+
+
