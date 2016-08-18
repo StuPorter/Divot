@@ -80,9 +80,7 @@ function fromLatLngToPoint(latLng, map) {
 }
 
 function getLatitudeLongitude(callback, address) {
-  // If adress is not supplied, use default value 'Chicago'
   address = address || 'Boston';
-  // Initialize the Geocoder
   geocoder = new google.maps.Geocoder();
   if (geocoder) {
       geocoder.geocode({
@@ -97,8 +95,6 @@ function getLatitudeLongitude(callback, address) {
 }
 
 function showResult(result) {
-  // $('#latitude').val(result.geometry.location.lat());
-  // $('#longitude').val(result.geometry.location.lng());
   $('#full-address').val(result.formatted_address);
   $('#search-results').append('<p class="find-search-result"> - ' + 
     result.formatted_address  + ' - </p>');

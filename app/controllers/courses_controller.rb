@@ -31,7 +31,7 @@ class CoursesController < ApplicationController
   # GET /:id
   ####
   get '/:id/?' do |id|
-    # Returns individual street info 
+    # Returns individual course info 
     course = Course.find_by id: id
     if course
       course.to_json
@@ -58,7 +58,7 @@ class CoursesController < ApplicationController
   # DELETE '/;id'
   #####
   delete '/:id/?' do |id|
-    # Delete a single street
+    # Delete a single course
     course = Course.find_by id: id
     if course
       course.destroy

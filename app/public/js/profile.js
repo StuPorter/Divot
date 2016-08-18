@@ -1,4 +1,4 @@
-var streets, currentUser = {};
+var courses, currentUser = {};
 
 $.ajax({
   dataType: "json",
@@ -9,9 +9,7 @@ $.ajax({
     //data - response from server
     courses = res;
     courses.forEach(function(street, index) {
-      $('#street-list-row').append('<a href="/courses/render/' + course.id + '"> <div class="profile-street-result"> <img src="' + course.img + '" /> <ul><li> <strong>Name:</strong>' + course.name + '</li><li> <strong>Address:</strong>' + course.address + '</li><br /></div></a>')
-      // console.log(street)
-    })
+$('#course-list-row').append('<a href="/courses/render/' + course.id + '"> <div class="profile-course-result"> <img src="' + course.img + '" /> <ul><li> <strong>Name:</strong>' + course.name + '</li><li> <strong>Location:</strong>' + course.location + '</li><br /></div></a>')    })
   },
   error: function (data, err) {
     console.log(err);

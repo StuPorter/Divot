@@ -448,31 +448,237 @@ a:hover {
   color: #ba6421;
 }
 * {
-  font-size: 18px;
+  font-size: 20px;
 }
 body {
   background: #f7f7f7;
 }
 body p {
-  font-family: sans-serif;
-}
-.signin {
-  color: red;
-}
-.profile-info {
-  background: grey;
-  padding: 10px;
-  border: 1px solid lightblue;
-  background: #eee;
-  box-shadow: inset 3px 3px 3px  #999;
-  margin: 0;
-  min-height: 264px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 .layout-logo {
-  height: 80px;
-  width: 80px;
+  margin-top: -8px;
+  width: 262px;
+  height: 90px;
+}
+.menu-list {
+  float: right;
+}
+.menu-list li {
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.error-message {
+  font-size: 14px;
+  color: red;
+}
+.home-container {
+  background: url('/img/home-bg.jpg');
+  background-size: cover;
+  height: 670px;
+}
+.home-login-form {
+  width: 200px;
+  margin-top: 70px;
+  margin-left: 0px;
+}
+.home-login-form div {
+  margin-top: 10px;
+}
+.home-title {
+  text-align: center;
+}
+.home-title h1 {
+  font-size: 80px;
+  margin-top: 50px;
+  color: #08A60E;
+  padding: 10px;
+}
+.home-title h3 {
+  font-size: 30px;
+  color: darkgreen;
+}
+.home-about-text p {
+  max-height: 200px;
+  margin: 0;
+  color: #f7f7f7;
+  margin-top: 280px;
+  text-shadow: 2px 2px darkgreen;
+  text-align: center;
+}
+header {
+  border-bottom: 1px solid lightgrey;
+  height: 100px;
+}
+header ul {
+  margin-top: 15px;
+}
+footer {
+  border-top: 1px solid lightgrey;
+  text-align: center;
+}
+footer p {
+  padding-top: 10px;
+}
+.map-find {
+  width: 440px;
+  height: 376px;
+}
+.marker-tooltip-find {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  background-image: url("http://g01.a.alicdn.com/kf/HTB1L91dKVXXXXboXVXXq6xXFXXXA/100pcs-lot-5ml-Small-Plastic-Cosmetic-Perfume-font-b-Lotion-b-font-font-b-Sample-b.jpg");
+  background-size: cover;
+  opacity: 0.7;
+  margin: 15px;
+  color: white;
+}
+.main-background {
+  background: url('/img/main-bg-copy.jpg');
+  background-size: cover;
+  min-height: 670px;
+}
+.main-container {
+  min-height: 600px;
+}
+.new-street-header {
+  margin: 20px 0;
+}
+.form-block input,
+.form-block textarea {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.form-block div {
+  display: inline-block;
+  width: 150px;
+}
+.course-results {
+  margin-top: 0;
+  min-height: 576px;
+  border: 1px solid lightgrey;
+  background: rgba(220, 220, 220, 0.1);
+  box-shadow: inset 2px 2px 2px  #999;
+  margin: 0;
+}
+.course-results :hover {
+  background: #ddd;
+}
+.course-results :hover li {
+  color: black;
+}
+.course-results div {
+  background: #eee;
+  margin-bottom: 15px;
+}
+.score-results {
+  margin-top: 0;
+  min-height: 576px;
+  border: 1px solid lightgrey;
+  background: rgba(220, 220, 220, 0.1);
+  box-shadow: inset 2px 2px 2px  #999;
+  margin: 0;
+}
+.score-results :hover {
+  background: #ddd;
+}
+.score-results :hover li {
+  color: black;
+}
+.score-results div {
+  background: #eee;
+  margin-bottom: 15px;
+}
+.profile-user-details > div {
+  margin: 10px;
+}
+.new-street-button {
+  text-align: center;
 }
 .profile-user-image {
   height: 200px;
   width: 200px;
+}
+.profile-street-btn {
+  padding: 5px;
+  padding-left: 0px;
+  margin-left: 20px;
+}
+.profile-street-btn span {
+  padding-right: 10px;
+}
+.profile-street-btn span :hover {
+  border-bottom: 2px solid #aaa;
+}
+.profile-user-data {
+  background: grey;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  background: rgba(220, 220, 220, 0.1);
+  box-shadow: inset 2px 2px 2px  #999;
+  margin: 0;
+  min-height: 350px;
+}
+.profile-user-details {
+  margin-top: 30px;
+}
+.profile-user-details div {
+  margin-bottom: 20px;
+}
+.profile-course-result {
+  height: 100px;
+  min-width: 500px;
+  border: 1px solid lightgrey;
+  box-shadow: 2px 2px 3px #888888;
+  margin-bottom: 20px;
+}
+.profile-course-result img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+}
+.profile-course-result ul {
+  list-style: none;
+}
+.course-textbox {
+  background: grey;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  background: rgba(220, 220, 220, 0.1);
+  box-shadow: inset 2px 2px 2px  #999;
+  margin: 0;
+  min-height: 350px;
+}
+.course-textbox p {
+  margin: 0;
+}
+.street-page-btn {
+  margin-top: 24px;
+  margin-right: 5px;
+}
+.course-post-results {
+  background: transparent;
+  padding-left: 20px;
+}
+.course-post-results p {
+  padding: -10px;
+}
+.putting {
+  background: url('/img/putting-rules.jpg');
+  background-size: cover;
+  min-height: 670px;
+}
+.explore-course-list {
+  text-align: center;
+}
+.explore-course-list li {
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }

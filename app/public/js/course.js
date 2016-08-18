@@ -36,8 +36,54 @@
     var worldPoint = map.getProjection().fromLatLngToPoint(latLng);
     return new google.maps.Point((worldPoint.x - bottomLeft.x) * scale, (worldPoint.y - topRight.y) * scale);
   }
-// End google maps code 
-};
+// End google maps code
+ 
+
+var course;
+var url = $(location).attr('href');
+url = url.split('/');
+var index = parseInt(url[url.length - 1]);
+// console.log(index)
+
+initMap();
+
+$.ajax({
+  dataType: "json", 
+  url : "/courses/" + index,
+  type: "GET",
+  success: function(res) {
+    //data - response from server
+    course = res;
+    if (course.img) {
+      $('#course-image').html('<img class="profile-user-image" src="' + course.img + '" />');
+    }
+    if (course.name) {
+      $('#course-name').html('<p ><strong>Course name:</strong> ' + course.name + '</p>')
+    }
+    if (course.location) {
+      $('#course-location').html('<p ><strong>Location :</strong> ' + course.location + '</p>')
+    }
+    if (course.difficulty) {
+      $('#course-difficulty').html('<p ><strong>Difficulty :</strong> ' + course.difficulty + '</p>')
+    }
+    if (course.about) {
+      $('#course-about').html('<p ><strong>Course Review:</strong> ' + course.about + '</p>')
+    }
+    initMap(street.lat, street.lng, 15);
+  },
+  error: function (data, err) {
+    console.log('error loading courses', err);
+  }
+});
+
+$('#street-new-post-btn').click(function() {
+  var postAuthor = $('#street-post-author').val(),
+      postText   = $('#street-post-text').val();
+      console.log('Click');
+  $("#street-post-results").append('<p><strong>@' + postAuthor + ':</strong>&nbsp;' + postText + '</p>');
+    
+
+});
 
 
  // document.getElementById("url").innerHTML = url;
@@ -54,8 +100,6 @@
 //     console.log('error loading posts ', err)
 //   }
 // });
-
-
   
 
 

@@ -13,7 +13,7 @@
 
 //@import 'print';      // Print styles (Coming soon)
 * {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @white: #f7f7f7;
@@ -22,7 +22,7 @@ body {
   background: @white;
 
   p {
-    font-family: sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
 }
 .layout-logo {
@@ -35,13 +35,14 @@ body {
   float: right;
   li {
     display: inline-block;
-    margin: 5px;
-    list-style: none;
-    :hover {
-      border-bottom: 2px solid #aaa;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    // list-style: none;
+    // :hover {
+    //   border-bottom: 2px solid #aaa;
     }
   }
-}
 
 .error-message {
   font-size: 14px;
@@ -105,8 +106,8 @@ footer {
 }
 
 .map-find {
-  width:640px;
-  height:576px;
+  width:440px;
+  height:376px;
 }
 
 .marker-tooltip-find {
@@ -147,11 +148,31 @@ footer {
   }
 }
 
-.street-results {
+.course-results {
   margin-top: 0;
   min-height: 576px;
   border: 1px solid lightgrey;
-  background: rgba(220,220,220,0.85);
+  background: rgba(220,220,220,0.10);
+  box-shadow: inset 2px 2px 2px  #999;
+  margin: 0;
+  :hover {
+     background: #ddd; 
+     li {
+      color: black;
+     }
+    }
+  div {
+    background: #eee;
+    margin-bottom: 15px; 
+
+  }
+}
+
+.score-results {
+  margin-top: 0;
+  min-height: 576px;
+  border: 1px solid lightgrey;
+  background: rgba(220,220,220,0.10);
   box-shadow: inset 2px 2px 2px  #999;
   margin: 0;
   :hover {
@@ -168,10 +189,9 @@ footer {
 }
 
 
-// .profile-user-details > div {
-//   margin: 10px;
-//   border: 2px solid red;
-// }
+.profile-user-details > div {
+  margin: 10px;
+}
 
 
 
@@ -201,7 +221,7 @@ footer {
   background: grey;
   padding: 10px;  
   border: 1px solid lightgrey;
-  background: rgba(220,220,220,0.85);
+  background: rgba(220,220,220,0.10);
   box-shadow: inset 2px 2px 2px  #999;
   margin: 0;
   min-height: 350px;
@@ -214,7 +234,7 @@ footer {
   }
 }
 
-.profile-street-result {
+.profile-course-result {
   height: 100px;
   // width: 96%;
   min-width: 500px;
@@ -232,11 +252,11 @@ footer {
   }
 }
 
-.street-textbox {
+.course-textbox {
 background: grey;
   padding: 10px;  
   border: 1px solid lightgrey;
-  background: rgba(220,220,220,0.85);
+  background: rgba(220,220,220,0.10);
   box-shadow: inset 2px 2px 2px  #999;
   margin: 0;
   min-height: 350px;
@@ -251,16 +271,16 @@ background: grey;
   // background: #ddd;
 }
 
-.street-new-post {
-  margin-left: 3px;
-  margin-top: 3px; 
-  background: red;
-  form {
-    padding-left: 20px;
-  }
-}
+// .street-new-post {
+//   margin-left: 3px;
+//   margin-top: 3px; 
+//   background: red;
+//   form {
+//     padding-left: 20px;
+//   }
+// }
 
-.street-post-results {
+.course-post-results {
   background: transparent;
   padding-left: 20px;
   p {
@@ -275,10 +295,23 @@ background: grey;
   
 }
 
-.register-bg {
-  background: url('/img/register.jpg');
+.putting {
+  background: url('/img/putting-rules.jpg');
   background-size: cover;
   min-height: 670px;
+}
+
+.explore-course-list {
+text-align: center;
+  li {
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    // list-style: none;
+    // :hover {
+    //   border-bottom: 2px solid #aaa;
+    }
 }
 
 
