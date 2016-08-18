@@ -1,6 +1,6 @@
 
 var  streets = [], pointers = [], markers = [];
-// Request API to get all poiners
+
  
 $.ajax({
   dataType: "json", 
@@ -8,10 +8,8 @@ $.ajax({
   type: "GET",
   data: "JSON",
   success: function(res) {
-    //data - response from server
     streets = res;
     console.log("ajax call terminated");
-    // console.log(streets);
   },
   error: function (data, err) {
     console.log(err);

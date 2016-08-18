@@ -27,7 +27,6 @@ class HomeController < ApplicationController
     if user
       password = BCrypt::Password.new user.password
       if password == params['password']
-      # "Your username was #{user.username}"
         session[:is_logged_in] = true
         session[:user_id] = user.id
         @page_title = "Divot - Profile"

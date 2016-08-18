@@ -15,7 +15,7 @@ get '/new/?' do
       @score = score
     else
       p "no course with this id found"
-      { status: "error", message: "no street by that id found"}.to_json
+      { status: "error", message: "no score by that id found"}.to_json
     end
   end
 
@@ -29,7 +29,7 @@ get '/new/?' do
       score.to_json
     else
       p "no course with this id found"
-      { status: "error", message: "no street by that id found"}.to_json
+      { status: "error", message: "no score by that id found"}.to_json
     end
   end
 
