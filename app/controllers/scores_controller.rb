@@ -52,7 +52,3 @@ post '/?' do
     erb :score_history
   end
 end
-
- 
-
-# score = Scores.create date: params["date"], coursename: params["coursename"], courselocation: params["courselocation"], shot: params["shot"]

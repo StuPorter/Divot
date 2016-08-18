@@ -6,10 +6,10 @@ $.ajax({
   type: "GET",
   data: "JSON",
   success: function(res) {
-    //data - response from server
     courses = res;
-    courses.forEach(function(street, index) {
-$('#score-list-row').append('<a href="/courses/render/' + course.id + '"> <div class="profile-course-result"> <img src="' + course.img + '" /> <ul><li> <strong>Name:</strong>' + course.name + '</li><li> <strong>Location:</strong>' + course.location + '</li><br /></div></a>')    })
+    courses.forEach(function(course, index) {
+$('#course-list-row').append('<a href="/courses/render/' + course.id + '"> <div class="profile-course-result"> <img src="' + course.img + '" /> <ul><li> <strong>Name:</strong>' + course.name + '</li><li> <strong>Location:</strong>' + course.location + '</li><br /></div></a>')   
+    })
   },
   error: function (data, err) {
     console.log(err);
@@ -23,7 +23,6 @@ $.ajax({
   data:     "JSON",
   success: function(res) {
     currentUser = res;
-    // console.log(res);
     if (currentUser.img) {
       $('#user-image').html('<img class="profile-user-image" src="' + currentUser.img + '" />');
     }

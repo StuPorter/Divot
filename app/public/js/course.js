@@ -76,6 +76,11 @@ $.ajax({
   }
 });
 
+
+
+
+
+
 $('#street-new-post-btn').click(function() {
   var postAuthor = $('#street-post-author').val(),
       postText   = $('#street-post-text').val();
@@ -86,20 +91,5 @@ $('#street-new-post-btn').click(function() {
 });
 
 
- // document.getElementById("url").innerHTML = url;
-
-// $.ajax({
-//   dataType: "json",
-//   url: '/posts',
-//   type: 'get',
-//   data: {street_id: index},
-//   success: function(res){
-//     console.log("get call worked ")
-//   }, 
-//   error: function (data, err) {
-//     console.log('error loading posts ', err)
-//   }
-// });
-  
 
 
