@@ -1,0 +1,49 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-8N5UgxGg0FPl3yxO7-PwIECMAKAETrA&callback=initMap" async defer></script>
+
+<div class="container main-background">
+  <div class="row main-container">
+    <div class="col-4"> 
+      <!-- The adress searcing form -->
+      <p>Enter the address and press Search</p>
+      </label><br />
+      <form action="/courses/new/" method="post">
+        <label class="form-block">
+        <!-- the full adress name, first match founded by Google API -->
+         Enter info: <br />
+          <input type="text" name="name" placeholder="Course Name" />
+        </label><br />
+        <label class="form-block">
+         Location: <br />
+          <input type="text" name="location" placeholder="Course Location" />
+        </label><br />
+        <label class="form-block">
+         Course Review: <br />
+          <textarea name="about" rows="8" cols="35"></textarea>
+        </label><br />
+        <label class="form-block">
+         Course Picture: <br />
+        <label class="form-block">
+          <input type="text" name="img" size="25" placeholder="Path to an image" />
+        </label><br />
+        <label class="form-block">
+         Course difficulty: <br />
+          <input type="text" name="difficulty" placeholder="Hard/Medium/Easy" />
+        </label><br />
+        <button>Add New Course</button>
+      </form>
+    </div>
+
+    <div class="col-8">
+    
+    <h3 class="new-street-header">Find the course by using the search</h3>
+  
+      <div id="map" class="map-find"></div>
+      <div>
+        <p><%= @message %> </p>
+      </div>
+      <div id="marker-tooltip" class="marker-tooltip-find"></div>
+    </div>  
+  </div>
+</div>
+
+<script src="/js/new-course.js"></script>

@@ -1,0 +1,25 @@
+<main class="container register-bg">
+  <div class="row main-container">
+    <div class="col-4">&nbsp;</div>
+    <div class="col-4">
+      <h2>Enter Score</h2>
+     <!--  <p class="red"> <%= @message %> </p> -->
+
+      <form action="/scores" method="post">
+        <label class="form-block">
+          <input type="date" name="date" size="25" placeholder="Pick a date" required/>
+        </label><br />
+        <label class="form-block">
+          <input type="text" name="coursename" size="25" placeholder="What Course?" required/>
+        </label><br />
+        <label class="form-block">
+          <input type="text" name="courselocation" size="25" placeholder="Enter Course Location" />
+        </label><br />
+        <label class="form-block">
+          <input type="number" name="shot" size="25" placeholder="Enter most recent score" />
+        </label><br />
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+</main>

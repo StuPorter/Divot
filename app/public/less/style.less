@@ -25,28 +25,261 @@ body {
     font-family: sans-serif;
   }
 }
+.layout-logo {
+  margin-top: -8px;
+  width: 262px;
+  height: 90px;
+}
 
-.signin {
+.menu-list {
+  float: right;
+  li {
+    display: inline-block;
+    margin: 5px;
+    list-style: none;
+    :hover {
+      border-bottom: 2px solid #aaa;
+    }
+  }
+}
+
+.error-message {
+  font-size: 14px;
   color: red;
 }
 
-.profile-info {
-  background: grey;
-  padding: 10px;  
-  border: 1px solid lightblue;
-  background: #eee;
-  box-shadow: inset 3px 3px 3px  #999;
-  margin: 0;
-  min-height: 350px;
+.home-container {
+  background: url('/img/home-bg.jpg');
+  background-size: cover;
+  height: 670px;
 }
 
-.layout-logo{
-  height: 80px;
-  width:  80px;
+.home-login-form {
+  width: 200px;
+  margin-top: 70px;
+  margin-left: 0px;
+  div {
+    margin-top: 10px; 
+  }
+}
+
+.home-title {
+  text-align: center;
+  h1 {
+    font-size: 80px;
+    margin-top: 50px;
+    color: #08A60E;
+    padding: 10px;
+  }
+  h3 {
+    font-size: 30px;
+    color: darkgreen;
+  }
+}
+
+.home-about-text p{
+  max-height  : 200px; 
+  margin: 0;
+  color: @white;
+  margin-top: 280px;
+
+  text-shadow: 2px 2px darkgreen;
+  text-align: center;
+
+}
+
+header {
+  border-bottom: 1px solid lightgrey;
+  height: 100px;
+  ul {
+    margin-top: 15px;
+  }
+}
+
+footer {
+  border-top: 1px solid lightgrey;
+  text-align: center;
+  p {
+    padding-top: 10px;
+  }
+}
+
+.map-find {
+  width:640px;
+  height:576px;
+}
+
+.marker-tooltip-find {
+  display: none;
+  position:absolute;
+  width: 200px;
+  height: 150px;
+  background-image: url("http://g01.a.alicdn.com/kf/HTB1L91dKVXXXXboXVXXq6xXFXXXA/100pcs-lot-5ml-Small-Plastic-Cosmetic-Perfume-font-b-Lotion-b-font-font-b-Sample-b.jpg");
+  background-size: cover;
+  opacity: 0.7;
+  margin: 15px;
+  color: white;
+}
+
+.main-background {
+  background: url('/img/main-bg-copy.jpg');
+  background-size: cover;
+  min-height: 670px;
+}
+
+.main-container {
+  min-height: 600px;
+}
+
+.new-street-header {
+  margin: 20px 0;
+}
+
+.form-block {
+  input, textarea {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  div {
+    
+    display: inline-block;
+    width: 150px;
+  }
+}
+
+.street-results {
+  margin-top: 0;
+  min-height: 576px;
+  border: 1px solid lightgrey;
+  background: rgba(220,220,220,0.85);
+  box-shadow: inset 2px 2px 2px  #999;
+  margin: 0;
+  :hover {
+     background: #ddd; 
+     li {
+      color: black;
+     }
+    }
+  div {
+    background: #eee;
+    margin-bottom: 15px; 
+
+  }
+}
+
+
+// .profile-user-details > div {
+//   margin: 10px;
+//   border: 2px solid red;
+// }
+
+
+
+.new-street-button {
+  text-align: center;
 }
 
 .profile-user-image {
   height: 200px;
   width: 200px;
 }
+
+.profile-street-btn {
+  padding: 5px;
+  padding-left: 0px;
+  margin-left: 20px;
+  // border: 1px solid blue;
+  span {
+    padding-right: 10px;
+    :hover {
+      border-bottom: 2px solid #aaa;
+    }
+  }
+}
+
+.profile-user-data {
+  background: grey;
+  padding: 10px;  
+  border: 1px solid lightgrey;
+  background: rgba(220,220,220,0.85);
+  box-shadow: inset 2px 2px 2px  #999;
+  margin: 0;
+  min-height: 350px;
+}
+
+.profile-user-details {
+  margin-top: 30px;
+  div {
+    margin-bottom: 20px;
+  }
+}
+
+.profile-street-result {
+  height: 100px;
+  // width: 96%;
+  min-width: 500px;
+  border: 1px solid lightgrey;
+  box-shadow: 2px 2px 3px #888888;
+    margin-bottom: 20px; 
+  img {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 20px; 
+  }
+  ul {
+    list-style: none;
+  }
+}
+
+.street-textbox {
+background: grey;
+  padding: 10px;  
+  border: 1px solid lightgrey;
+  background: rgba(220,220,220,0.85);
+  box-shadow: inset 2px 2px 2px  #999;
+  margin: 0;
+  min-height: 350px;
+  p {
+    margin: 0;
+  }
+}
+
+.street-page-btn {
+  margin-top: 24px;
+  margin-right: 5px;
+  // background: #ddd;
+}
+
+.street-new-post {
+  margin-left: 3px;
+  margin-top: 3px; 
+  background: red;
+  form {
+    padding-left: 20px;
+  }
+}
+
+.street-post-results {
+  background: transparent;
+  padding-left: 20px;
+  p {
+    padding: -10px;
+   
+  }
+}
+
+.find-search-result {
+    // padding: 0;
+    // margin: 0;
+  
+}
+
+.register-bg {
+  background: url('/img/register.jpg');
+  background-size: cover;
+  min-height: 670px;
+}
+
+
 

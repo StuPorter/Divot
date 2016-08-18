@@ -1,4 +1,3 @@
 class Score < ActiveRecord::Base
-  belongs_to :user
-  belongs_to :history  
+  belongs_to :users
 end

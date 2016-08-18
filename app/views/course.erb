@@ -1,0 +1,59 @@
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-8N5UgxGg0FPl3yxO7-PwIECMAKAETrA&callback=initMap" async defer></script>
+
+<div class="container  main-background">
+  <div class="row main-container">
+    <aside class="col-4">
+      <div class="profile-user-details">
+        <div id="user-image">
+          <img class="profile-user-image" src="/img/no-image-found.jpg" />
+        </div>
+        <div class="street-textbox">
+          <div id="street-name">
+            <p >Course Name: ...</p>
+          </div>
+          <div id="street-address">
+            <p >Course Location: ...</p>
+          </div>
+          <div id="street-about">
+            <p >Course Review: ...</p>
+          </div> 
+          </a><button>Subscribe</button>
+        </div>
+      </div>
+        
+      <!-- <a href="/users/current/edit">Edit Profile</a> -->
+
+
+      
+    </aside>
+    <main class="col-8">
+      <button id="street-map-btn" class="street-page-btn">Map</button> 
+      <button id="street-chat-btn"  class="street-page-btn">Chat</button> 
+      <button id="street-event-btn"  class="street-page-btn">Events</button>  <br />
+    
+    <div id="street-map" class="street-results-map">
+      No map available 
+    </div>
+    <div id="street-chat" class="street-results">
+      <div class="street-new-post">
+        <form action="#" method="post">
+          <label class="form-block">
+          <strong>Create new post:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" name="img" size="40" id="street-post-author" placeholder="Author name" required/>&nbsp;&nbsp;
+          <button type="button" id="street-new-post-btn">Add post</button>
+        </label><br />
+        <label class="form-block">
+        <textarea name="text" id="street-post-text" rows="3" cols="80" placeholder="Describe the event..." required></textarea>
+        </label><br />
+      </div>
+      <div id="street-post-results">
+      </div>
+    </div>
+    <div id="street-events" class="street-results">Comming soon ...</div>
+    </main>
+  </div>
+</div>
+
+
+
+<script src="/js/course.js"></script>

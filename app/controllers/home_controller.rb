@@ -45,11 +45,6 @@ class HomeController < ApplicationController
     end
   end
 
- get '/scores' do
-    @page_title = "Divot - User score history"
-    @message ="input score"
-    erb :score
-  end
 
  
 

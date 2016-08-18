@@ -1,5 +1,22 @@
-var currentUser = {};
+var streets, currentUser = {};
 
+$.ajax({
+  dataType: "json",
+  url : "/courses",
+  type: "GET",
+  data: "JSON",
+  success: function(res) {
+    //data - response from server
+    courses = res;
+    courses.forEach(function(street, index) {
+      $('#street-list-row').append('<a href="/courses/render/' + course.id + '"> <div class="profile-street-result"> <img src="' + course.img + '" /> <ul><li> <strong>Name:</strong>' + course.name + '</li><li> <strong>Address:</strong>' + course.address + '</li><br /></div></a>')
+      // console.log(street)
+    })
+  },
+  error: function (data, err) {
+    console.log(err);
+  }
+});
   
 $.ajax({
   dataType: "json",
@@ -13,7 +30,7 @@ $.ajax({
       $('#user-image').html('<img class="profile-user-image" src="' + currentUser.img + '" />');
     }
     if (currentUser.username) {
-      $('#user-username').html('<p><strong> Userame:</strong> ' + currentUser.username + '</p>');
+      $('#user-username').html('<p><strong> Username:</strong> ' + currentUser.username + '</p>');
     }
     if (currentUser.avgscore) {
       $('#user-avgscore').html('<p><strong> My avgscore:</strong> ' + currentUser.avgscore + '</p>');
