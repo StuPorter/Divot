@@ -58,10 +58,10 @@ $.ajax({
       $('#course-image').html('<img class="profile-user-image" src="' + course.img + '" />');
     }
     if (course.name) {
-      $('#course-name').html('<p ><strong>Course name:</strong> ' + course.name + '</p>')
+      $('#course-name').html('<p ><strong>Course name:</strong> ' +  course.name + '</p>')
     }
     if (course.location) {
-      $('#course-location').html('<p ><strong>Location :</strong> ' + course.location + '</p>')
+      $('#course-location').html('<p ><strong>Location:</strong> ' +  course.location + '</p>')
     }
     if (course.difficulty) {
       $('#course-difficulty').html('<p ><strong>Difficulty :</strong> ' + course.difficulty + '</p>')

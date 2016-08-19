@@ -2,8 +2,8 @@
  * Main Stylesheet
  */
 
-::selection { background: @orange; color: @white; }
-::moz-selection { background: @orange; color: @white; }
+::selection { background: @green; color: @white; }
+::moz-selection { background: @green; color: @white; }
 
 @import 'modules/colors';     // Global color scheme
 @import 'modules/mixins';     // Mixins
@@ -27,7 +27,7 @@ body {
 }
 .layout-logo {
   margin-top: -8px;
-  width: 262px;
+  width:  90px;
   height: 90px;
 }
 
@@ -123,7 +123,7 @@ footer {
 }
 
 .main-background {
-  background: url('/img/main-bg-copy.jpg');
+  background: url('/img/main.jpg');
   background-size: cover;
   min-height: 670px;
 }
@@ -149,6 +149,7 @@ footer {
 }
 
 .course-results {
+
   margin-top: 0;
   min-height: 576px;
   border: 1px solid lightgrey;
@@ -179,7 +180,9 @@ footer {
   :hover {
      background: #ddd; 
      li {
-      color: black;
+      color: green;
+      display: inline-block;
+      margin-left: 20px;
      }
     }
   div {
@@ -188,6 +191,13 @@ footer {
 
   }
 }
+
+.score-results li {
+
+      color: green;
+      display: inline-block;
+      margin-left: 20px;
+    }
 
 
 .profile-user-details > div {
@@ -203,6 +213,8 @@ footer {
 .profile-user-image {
   height: 200px;
   width: 200px;
+  border-radius: 95%;
+  margin-left: 5px;
 }
 
 .profile-street-btn {
@@ -221,8 +233,8 @@ footer {
   background: grey;
   padding: 10px;  
   border: 1px solid lightgrey;
-  background: rgba(220,220,220,0.10);
-  box-shadow: inset 2px 2px 2px #999;
+  background: rgba(220,220,220,0.85);
+  box-shadow: inset 2px 2px 2px  #999;
   margin: 0;
   min-height: 350px;
 }
@@ -256,7 +268,7 @@ footer {
 background: grey;
   padding: 10px;  
   border: 1px solid lightgrey;
-  background: rgba(220,220,220,0.10);
+  background: rgba(220,220,220,0.85);
   box-shadow: inset 2px 2px 2px  #999;
   margin: 0;
   min-height: 350px;
@@ -280,11 +292,6 @@ background: grey;
   }
 }
 
-.find-search-result {
-    // padding: 0;
-    // margin: 0;
-  
-}
 
 .putting {
   background: url('/img/putting-rules.jpg');
@@ -320,3 +327,25 @@ text-align: center;
   color: red;
 }
 
+.enter-score {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.score-info {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#current {
+  color: green;
+}
+
+.handicap {
+  text-align: center;
+}
+
+#welcome {
+  color: black;
+  text-align: center;
+}

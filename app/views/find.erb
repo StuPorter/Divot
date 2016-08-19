@@ -5,8 +5,10 @@
     <div class="col-3">
       <h4>Type in a Course</h4>
       <input id="address" type="text" size="20" placeholder="Enter address here" />
-      <button id="btn">Search</button>
+      <br />
       <div>
+      <button id="btn">Search</button>
+      <br />
           <h4>Located in: </h4>
             <input type="text" id="full-address" size="20" readonly />
       </div>
@@ -19,16 +21,13 @@
         <span><a href="/courses/new">Add New Course</a></span> 
       </div>
       <div id="map" class="map-find"></div>
-      <div>
-        <p><%= @message %> </p>
-      </div>
       <div id="marker-tooltip" class="marker-tooltip-find"></div>
      
 
   </div>
 
-  <div class="col-3"
-<p>Explore these world-famous courses!</p>
+  <div class="col-3">
+<p>Explore world-famous courses!</p>
      <ul class="explore-course-list">
         <li>
           <a href="/courses/render/1">The Ocean Course </a>
